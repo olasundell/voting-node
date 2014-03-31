@@ -1,0 +1,31 @@
+{
+	"name": "voting-node",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/olasundell/voting-node.git"
+	},
+	"scripts": {
+		"start": "./node_modules/.bin/coffee app.coffee"
+	},
+	"dependencies": {
+		"express": "3.x",
+		"mongodb": "*",
+		"jade": "*",
+		"stylus": "*",
+		"coffee-script": "*"
+	},
+	"devDependencies": {
+		"supertest": "*",
+		"mocha": "*",
+		"methods": "*",
+		"sinon": "*",
+		"should": "*",
+		"winston": "*",
+		"supervisor": "*"
+	},
+
+	"script": {
+		"test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register"
+	}
+}
